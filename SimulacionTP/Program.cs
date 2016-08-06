@@ -214,7 +214,7 @@ namespace SimulacionTP
                 {
                     if (i.It_Fija == IF)
                     {
-                        acumMediaTiempo = acumMediaTiempo + (i.Acum_dq/50);
+                        acumMediaTiempo = acumMediaTiempo + (i.Acum_dq/IF_Min);
                     }
 
                    
