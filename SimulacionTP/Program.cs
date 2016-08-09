@@ -221,7 +221,7 @@ namespace SimulacionTP
                 }
                 
                 swMdMTiempo.WriteLine(IF + " " + Math.Round(acumMediaTiempo / IF,5));
-                calculoDesvioTiempo = Math.Pow((acumMediaTiempo/IF)/(IF+1),2) - Math.Pow((acumMediaTiempo/IF),2);
+                calculoDesvioTiempo = Math.Pow((acumMediaTiempo/IF) - ((acumMediaTiempo/IF)/IF+1),2);
                 swDTiempo.WriteLine(IF + " " + Math.Round(calculoDesvioTiempo/IF,5));
                 IF += IF_Min;
                 
